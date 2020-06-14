@@ -5,11 +5,14 @@
 
     {% include meta.html %}
 
+    <!-- Custom fonts for this template-->
+    <link href="{{ site.baseurl }}/assets/js/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
@@ -27,7 +30,7 @@
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
+            <a href="{{ site.baseurl }}/blog">Blog</a>
             <a href="{{ site.baseurl }}/about">About</a>
           </nav>
         </header>
@@ -47,5 +50,7 @@
     </div>
 
     {% include analytics.html %}
+    <script src="{{ site.baseurl }}/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/jquery/jquery.min.js"></script>
   </body>
 </html>
